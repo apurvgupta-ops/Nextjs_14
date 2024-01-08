@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <div>
       <div>
-        <h2>Featured Products</h2>
+        <h2>Featured Blog</h2>
         {children}
       </div>
     </div>
