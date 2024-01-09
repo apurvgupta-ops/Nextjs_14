@@ -7,12 +7,15 @@ export default function RootLayout({
   children,
   users,
   notification,
+  login,
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
   notification: React.ReactNode;
+  login: React.ReactNode;
 }) {
-  return (
+  const isLoggedIn = true;
+  return isLoggedIn ? (
     <div>
       <div>{children}</div>
       <div>
@@ -20,5 +23,7 @@ export default function RootLayout({
         <div>{notification}</div>
       </div>
     </div>
+  ) : (
+    login
   );
 }
